@@ -14,8 +14,8 @@
   --color-gold-300: #e8d6a3;
   --color-gold-100: #f4ead0;
 
-  --color-brown-light: #c8956d;
-  --color-brown-light-hover: #b87e52;
+  --color-brand-pink: #c41e5c;
+  --color-brand-wine: #7a1538;
 
   --color-cream-50: #fdfaf5;
   --color-cream-100: #f8f1e7;
@@ -40,6 +40,20 @@ body {
 
 .font-display {
   font-family: var(--font-display);
+}
+
+/* Brand gradient — pink to wine maroon, used for buttons and accent badges */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, var(--color-brand-pink) 0%, var(--color-brand-wine) 100%);
+}
+.bg-brand-gradient-hover:hover {
+  background: linear-gradient(135deg, var(--color-brand-wine) 0%, var(--color-brand-pink) 100%);
+}
+.text-brand-wine {
+  color: var(--color-brand-wine);
+}
+.border-brand-pink {
+  border-color: var(--color-brand-pink);
 }
 
 /* Subtle laurel-inspired divider rule, echoes the crest's wreath motif */
