@@ -25,7 +25,7 @@ export default function Navbar() {
               href={`#${link.toLowerCase()}`}
               className={`text-[15px] font-medium transition-colors ${
                 i === 0
-                  ? 'text-black border-b-2 border-brown-light pb-1'
+                  ? 'text-black border-b-2 border-brand-pink pb-1'
                   : 'text-black/70 hover:text-black'
               }`}
             >
@@ -37,7 +37,7 @@ export default function Navbar() {
         <div className="hidden lg:block">
           <a
             href="#login"
-            className="inline-flex items-center gap-2 bg-brown-light text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-brown-light-hover transition-colors"
+            className="inline-flex items-center gap-2 bg-brand-gradient bg-brand-gradient-hover text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors"
           >
             <User size={16} /> Login
           </a>
@@ -67,7 +67,7 @@ export default function Navbar() {
           ))}
           <a
             href="#login"
-            className="inline-flex items-center justify-center gap-2 bg-brown-light text-white px-5 py-2.5 rounded-full text-sm font-semibold"
+            className="inline-flex items-center justify-center gap-2 bg-brand-gradient text-white px-5 py-2.5 rounded-full text-sm font-semibold"
           >
             <User size={16} /> Login
           </a>
