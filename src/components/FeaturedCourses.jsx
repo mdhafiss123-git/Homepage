@@ -33,13 +33,13 @@ export default function FeaturedCourses() {
               </div>
 
               <div className="flex items-center gap-2 mt-1">
-                <span className="w-6 h-6 rounded-full bg-brown-light/15 text-brown-light-hover text-[10px] font-bold flex items-center justify-center shrink-0">
+                <span className="w-6 h-6 rounded-full bg-brand-gradient text-white text-[10px] font-bold flex items-center justify-center shrink-0">
                   {course.tutor.charAt(0)}
                 </span>
                 <span className="text-xs text-black/70 truncate">{course.tutor}</span>
               </div>
 
-              <button className="mt-auto bg-brown-light text-white text-sm font-semibold rounded-full py-2.5 hover:bg-brown-light-hover transition-colors">
+              <button className="mt-auto bg-brand-gradient bg-brand-gradient-hover text-white text-sm font-semibold rounded-full py-2.5 transition-colors">
                 Enroll Now
               </button>
             </div>
