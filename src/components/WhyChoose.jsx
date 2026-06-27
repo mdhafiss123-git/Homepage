@@ -12,9 +12,9 @@ export default function WhyChoose() {
           {WHY_CHOOSE.map(({ icon: Icon, label, sub }) => (
             <div
               key={label}
-              className="bg-white border border-gold-300/50 rounded-xl px-5 py-7 flex flex-col items-center text-center gap-3 hover:border-brown-light/60 hover:shadow-card transition-all"
+              className="bg-white border border-gold-300/50 rounded-xl px-5 py-7 flex flex-col items-center text-center gap-3 hover:border-brand-pink/60 hover:shadow-card transition-all"
             >
-              <span className="flex items-center justify-center w-12 h-12 rounded-full bg-brown-light/15 text-brown-light-hover">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-gradient text-white">
                 <Icon size={22} />
               </span>
               <div>
