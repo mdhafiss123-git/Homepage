@@ -21,13 +21,13 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#courses"
-              className="inline-flex items-center gap-2 bg-brown-light text-white px-6 py-3.5 rounded-full font-semibold hover:bg-brown-light-hover transition-colors shadow-card"
+              className="inline-flex items-center gap-2 bg-brand-gradient bg-brand-gradient-hover text-white px-6 py-3.5 rounded-full font-semibold transition-colors shadow-card"
             >
               Explore Courses <ArrowRight size={18} />
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 border border-brown-light text-black px-6 py-3.5 rounded-full font-semibold hover:bg-brown-light/10 transition-colors"
+              className="inline-flex items-center gap-2 border border-brand-pink text-black px-6 py-3.5 rounded-full font-semibold hover:bg-brand-pink/10 transition-colors"
             >
               Book Free Demo <Calendar size={18} />
             </a>
@@ -43,7 +43,7 @@ export default function Hero() {
         <div className="bg-white border border-gold-300/50 rounded-2xl shadow-card grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gold-300/50">
           {STATS.map(({ label, sub, value, icon: Icon }) => (
             <div key={label} className="flex items-center gap-4 px-8 py-6">
-              <span className="flex items-center justify-center w-12 h-12 rounded-full bg-brown-light/15 text-brown-light-hover shrink-0">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-gradient text-white shrink-0">
                 <Icon size={22} />
               </span>
               <div>
