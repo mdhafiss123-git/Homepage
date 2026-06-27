@@ -18,7 +18,7 @@ export default function Testimonials() {
             <p className="text-black/80 text-[15px] leading-relaxed">{t.quote}</p>
             <div className="flex items-center justify-between mt-auto">
               <div className="flex items-center gap-3">
-                <span className="w-9 h-9 rounded-full bg-brown-light text-white text-sm font-bold flex items-center justify-center">
+                <span className="w-9 h-9 rounded-full bg-brand-gradient text-white text-sm font-bold flex items-center justify-center">
                   {t.name.charAt(0)}
                 </span>
                 <span className="text-sm font-semibold text-black">{t.name}</span>
@@ -35,7 +35,7 @@ export default function Testimonials() {
 
       <div className="flex justify-center gap-2 mt-6">
         {[0, 1, 2].map((i) => (
-          <span key={i} className={`h-2 rounded-full transition-all ${i === 0 ? 'w-6 bg-brown-light' : 'w-2 bg-gold-300'}`} />
+          <span key={i} className={`h-2 rounded-full transition-all ${i === 0 ? 'w-6 bg-brand-gradient' : 'w-2 bg-gold-300'}`} />
         ))}
       </div>
     </section>
