@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — pulled from the D for Doubts crest */
+  --color-maroon-950: #2c0a1a;
+  --color-maroon-900: #3d0e23;
+  --color-maroon-800: #4a1228;
+  --color-maroon-700: #5c1832;
+  --color-maroon-600: #7a2342;
+
+  --color-gold-600: #a9802f;
+  --color-gold-500: #c9a24b;
+  --color-gold-400: #d9bc73;
+  --color-gold-300: #e8d6a3;
+  --color-gold-100: #f4ead0;
+
+  --color-cream-50: #fdfaf5;
+  --color-cream-100: #f8f1e7;
+  --color-cream-200: #f0e6d6;
+
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  --shadow-card: 0 4px 20px -4px rgba(74, 18, 40, 0.12);
+  --shadow-card-hover: 0 12px 32px -8px rgba(74, 18, 40, 0.22);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-50);
+  color: var(--color-maroon-950);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Subtle laurel-inspired divider rule, echoes the crest's wreath motif */
+.rule-flourish {
+  position: relative;
+}
+.rule-flourish::before,
+.rule-flourish::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 28px;
+  height: 1px;
+  background: var(--color-gold-500);
+}
+.rule-flourish::before { right: calc(100% + 14px); }
+.rule-flourish::after { left: calc(100% + 14px); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
