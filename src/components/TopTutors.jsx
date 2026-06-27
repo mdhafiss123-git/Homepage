@@ -14,7 +14,7 @@ export default function TopTutors() {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
         {TUTORS.map((tutor) => (
           <div key={tutor.name} className="flex flex-col items-center text-center gap-2">
-            <div className="w-20 h-20 rounded-full bg-brown-light flex items-center justify-center text-white font-display text-2xl font-bold border-2 border-gold-400">
+            <div className="w-20 h-20 rounded-full bg-brand-gradient flex items-center justify-center text-white font-display text-2xl font-bold border-2 border-gold-400">
               {tutor.name.charAt(0)}
             </div>
             <p className="font-semibold text-black text-sm">{tutor.name}</p>
