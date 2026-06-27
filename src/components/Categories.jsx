@@ -19,7 +19,7 @@ export default function Categories() {
             key={label}
             className="group bg-white border border-gold-300/50 rounded-xl px-4 py-7 flex flex-col items-center text-center gap-3 hover:shadow-card-hover hover:-translate-y-0.5 transition-all cursor-pointer"
           >
-            <span className="flex items-center justify-center w-12 h-12 rounded-full bg-brown-light text-white group-hover:bg-brown-light-hover transition-colors">
+            <span className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-gradient bg-brand-gradient-hover text-white transition-colors">
               <Icon size={22} />
             </span>
             <div>
